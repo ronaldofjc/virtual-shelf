@@ -7,13 +7,17 @@ module.exports = {
     try {
       const { email, password } = req.body;
 
+      if (!email || !password) {
+        return res.status(400).send('Informe usuário e senha!');
+      }
+
       const user = await User.findOne({ email });
 
       if (!user) {
         return res.status(400).json({ error: 'User not found!' });
       }
 
-      if (!await user.compareHash(password)) {
+      if (!(await user.compareHash(password))) {
         return res.status(400).json({ error: 'Invalid password!' });
       }
 
