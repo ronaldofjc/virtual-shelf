@@ -17,13 +17,13 @@ mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 
+app.use(allowCors);
+
 requireDir(dbConfig.modelsPath);
 
 app.use(bodyParser.json());
 
 app.use(Sentry.Handlers.requestHandler());
-
-app.use(allowCors);
 
 app.use('/api', require('./app/routes'));
 
