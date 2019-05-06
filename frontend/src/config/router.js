@@ -1,15 +1,39 @@
 import Vue from "vue";
-import Router from "vue-router";
+import VueRouter from "vue-router";
 import Dashboard from "@/components/dashboard/Dashboard";
+import Auth from "@/components/auth/Auth";
 
-Vue.use(Router);
+import { userKey } from "@/global";
 
-export default new Router({
-  routes: [
-    {
-      path: "/",
-      name: "Dashboard",
-      component: Dashboard
-    }
-  ]
+Vue.use(VueRouter);
+
+const routes = [
+  {
+    name: "Dashboard",
+    path: "/",
+    component: Dashboard
+  },
+  {
+    name: "auth",
+    path: "/auth",
+    component: Auth
+  }
+];
+
+const router = new VueRouter({
+  mode: "history",
+  routes
 });
+
+router.beforeEach((to, from, next) => {
+  const json = localStorage.getItem(userKey);
+
+  if (to.matched.some(record => record.meta.requiresAdmin)) {
+    const user = JSON.parse(json);
+    user ? next() : next({ path: "/" });
+  } else {
+    next();
+  }
+});
+
+export default router;

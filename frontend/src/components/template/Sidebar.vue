@@ -3,7 +3,7 @@
     <section class="sidebar">
       <ul class="sidebar-menu" data-widget="tree">
         <li>
-          <a href="#/">
+          <a href="/">
             <i class="fa fa-dashboard"></i>
             <span>Dashboard</span>
           </a>

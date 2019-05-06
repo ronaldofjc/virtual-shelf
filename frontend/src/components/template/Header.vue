@@ -1,7 +1,7 @@
 <template>
   <div class="skin-blue">
     <header class="main-header">
-      <a href="/#/" class="logo">
+      <a href="/" class="logo">
         <span class="logo-mini">
           <i class="fa fa-fort-awesome"></i>
         </span>
