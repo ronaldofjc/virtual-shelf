@@ -15,6 +15,9 @@ routes.use(authMiddleware);
 
 routes.put('/users', controllers.userController.update);
 
+// Stats
+routes.get('/stats', controllers.statController.stats);
+
 // Books routes
 routes.get('/books', controllers.bookController.books);
 routes.get('/books/:id', controllers.bookController.book);
