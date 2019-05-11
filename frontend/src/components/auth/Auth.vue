@@ -46,7 +46,7 @@ export default {
           localStorage.setItem(userKey, JSON.stringify(res.data));
           this.$router.push({ path: "/" });
         })
-        .catch(showError);
+        .catch(this.$toasted.global.defaultError());
     },
     signup() {
       axios

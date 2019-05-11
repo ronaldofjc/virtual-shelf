@@ -58,7 +58,7 @@ export default {
     }
   },
   created() {
-    this.validateToken();
+    //this.validateToken();
   }
 };
 </script>

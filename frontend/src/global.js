@@ -1,6 +1,6 @@
 import Vue from "vue";
 
-export const userKey = "__virtual_shelf_user";
+export const userKey = "0c8ee0e570bc6c3c4306be7c73099aec";
 export const baseApiUrl = "http://localhost:3000/api";
 
 export function showError(e) {
