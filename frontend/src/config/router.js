@@ -2,22 +2,21 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Dashboard from "@/components/dashboard/Dashboard";
 import Auth from "@/components/auth/Auth";
+import Books from "@/components/books/BookList";
+import Comics from "@/components/comics/ComicList";
+import Mangas from "@/components/mangas/MangaList";
 
 import { userKey } from "@/global";
 
 Vue.use(VueRouter);
 
 const routes = [
-  {
-    name: "Dashboard",
-    path: "/",
-    component: Dashboard
-  },
-  {
-    name: "auth",
-    path: "/auth",
-    component: Auth
-  }
+  { path: "/", name: "Dashboard", component: Dashboard },
+  { path: "/auth", name: "Auth", component: Auth },
+  { path: "/comics", name: "Comics", component: Comics },
+  { path: "/books", name: "Books", component: Books },
+  { path: "/mangas", name: "Mangas", component: Mangas },
+  { path: "*", component: Dashboard }
 ];
 
 const router = new VueRouter({
