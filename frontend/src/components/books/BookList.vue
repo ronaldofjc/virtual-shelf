@@ -1,6 +1,11 @@
 <template>
   <div>
-    <h1>Book List</h1>
+    <section class="content-header">
+      <h1>
+        Livros
+        <small>Cadastro</small>
+      </h1>
+    </section>
   </div>
 </template>
 

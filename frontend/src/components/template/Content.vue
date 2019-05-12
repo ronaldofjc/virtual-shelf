@@ -37,7 +37,7 @@
               <p>Mangás</p>
             </div>
             <div class="icon">
-              <i class="fa fa-object-group"></i>
+              <i class="fa fa-address-card-o"></i>
             </div>
           </div>
         </div>

@@ -2,8 +2,8 @@
   <div>
     <section class="content-header">
       <h1>
-        Quadrinhos
-        <small>Lista</small>
+        Livro
+        <small>Cadastro</small>
       </h1>
     </section>
   </div>

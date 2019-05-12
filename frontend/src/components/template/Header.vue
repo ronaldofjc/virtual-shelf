@@ -1,7 +1,7 @@
 <template>
   <div class="skin-blue">
     <header class="main-header">
-      <a href="/" class="logo">
+      <router-link to="/" class="logo">
         <span class="logo-mini">
           <i class="fa fa-fort-awesome"></i>
         </span>
@@ -9,7 +9,7 @@
           <i class="fa fa-fort-awesome"></i>
           <b>{{ title }}</b>
         </span>
-      </a>
+      </router-link>
       <nav class="navbar navbar-static-top">
         <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
           <span class="sr-only">Toggle navigation</span>

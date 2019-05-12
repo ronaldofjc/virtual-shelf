@@ -2,8 +2,8 @@
   <div>
     <section class="content-header">
       <h1>
-        Quadrinhos
-        <small>Lista</small>
+        Mangás
+        <small>Estatísticas</small>
       </h1>
     </section>
   </div>
