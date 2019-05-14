@@ -3,7 +3,7 @@
     <section class="content-header">
       <h1>
         Livros
-        <small>Cadastro</small>
+        <small>Lista</small>
       </h1>
     </section>
   </div>
